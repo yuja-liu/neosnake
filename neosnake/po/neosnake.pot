@@ -1,0 +1,33 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2016-01-20 20:58+0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=CHARSET\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: .ubuntu-sdk-deploy/components/ShowBar.qml:22 components/ShowBar.qml:22
+msgid "Score"
+msgstr ""
+
+#: .ubuntu-sdk-deploy/components/ShowBar.qml:40 components/ShowBar.qml:40
+msgid "Time Left"
+msgstr ""
+
+#. TRANSLATORS: %1 is the link to the source code, %2 is the hosting service
+#. Example: "Source code available on <a href=\https://launchpad.net/match-the-color>launchpad.net</a>"
+#: .ubuntu-sdk-deploy/pages/AboutPage.qml:42 pages/AboutPage.qml:43
+#, qt-format
+msgid "Source code available on <a href=\"%1\">%2</a>"
+msgstr ""

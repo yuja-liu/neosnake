@@ -1,0 +1,17 @@
+{
+    "name": "neosnake.rain",
+    "description": "description of neosnake",
+    "architecture": "all",
+    "title": "neosnake",
+    "hooks": {
+        "neosnake": {
+            "apparmor": "neosnake.apparmor",
+            "desktop":  "neosnake.desktop"
+        }
+    },
+    "version": "0.1",
+    "maintainer": "Rain Liu <liuyujiaokok@126.com>",
+    "framework" : "ubuntu-sdk-15.04"
+}
+
+
