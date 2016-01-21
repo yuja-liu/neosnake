@@ -69,15 +69,18 @@ Panel {
             color:"#80000000"
         }
         Image{
+            id:soundImage
             anchors.fill: parent
-            source:"../images/volume.jpg"
+            source: "../images/volume.jpg"
             fillMode: Image.Stretch
         }
         MouseArea{
             anchors.fill:parent
             onClicked: {
-                console.log("recSound clicked")
-                panel.close()
+                if (bgm.playbackState == MediaPlayer.PlayingState)
+                {bgm.stop(); soundImage.source= "../images/mute.jpg"}
+                else
+                {bgm.play(); soundImage.source= "../images/volume.jpg"}
             }
         }
     }

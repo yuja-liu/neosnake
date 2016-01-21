@@ -6,7 +6,7 @@ Page{
     title:"About"
     Column{
         anchors.fill: parent
-        anchors.margins: units.gu(7)
+        anchors.margins: units.gu(3)
         spacing: units.gu(5)
         Rectangle{
             anchors.horizontalCenter: parent.horizontalCenter

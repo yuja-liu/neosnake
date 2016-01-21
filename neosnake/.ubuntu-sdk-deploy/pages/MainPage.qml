@@ -7,6 +7,9 @@ Page{
     property alias timeLeft: countdown.left
     property alias showAnimation: showAnimation
     property alias popAnimation: popAnimation
+    SideCalculator{
+        id:calculator
+    }
 
     Control{
         z:1
@@ -92,11 +95,12 @@ Page{
 
     Food{
         id:food
-        height:boardHeight*units.gu(3)
-        width:boardWidth*units.gu(3)
+        height:boardHeight*calculator.side
+        width:boardWidth*calculator.side
         anchors.centerIn: parent
         Display{
             id:foodDisp
+            side:calculator.side
             anchors.fill: parent
             dispX: parent.xPos;
             dispY: parent.yPos;
@@ -106,11 +110,12 @@ Page{
 
     Hinder{
         id:hinder
-        height:boardHeight*units.gu(3)
-        width:boardWidth*units.gu(3)
+        height:boardHeight*calculator.side
+        width:boardWidth*calculator.side
         anchors.centerIn: parent
         Display{
             id:hinderDisp
+            side:calculator.side
             anchors.fill: parent;
             dispX: parent.xPos;
             dispY: parent.yPos;
@@ -120,8 +125,8 @@ Page{
 
     Snake{
         id:snake
-        height:boardHeight*units.gu(3)
-        width:boardWidth*units.gu(3)
+        height:boardHeight*calculator.side
+        width:boardWidth*calculator.side
         anchors.centerIn: parent
         Component.onCompleted: {
             snake.init();
@@ -133,6 +138,9 @@ Page{
 
         SnakeDisp{
             id:snakeDisp
+            side:calculator.side
+            dispX: parent.xPos;
+            dispY: parent.yPos;
             anchors.fill: parent;
         }
     }

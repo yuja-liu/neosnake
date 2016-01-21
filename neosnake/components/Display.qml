@@ -5,13 +5,14 @@ Canvas{
     property var dispX: new Array();
     property var dispY: new Array();
     property var dispColor: "black"
+    property var side
     onPaint: {
         context.clearRect(0,0,parent.width ,parent.height);
         context.fillStyle=dispColor;
         context.beginPath();
         var i = 0;
         for(; i<dispX.length; i++){
-            context.rect(dispX[i] * units.gu(3), dispY[i] *units.gu(3), units.gu(3), units.gu(3));
+            context.rect(dispX[i] * side, dispY[i] *side, side, side);
         }
         context.fill();
     }

@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-01-21 14:01+0800\n"
+"POT-Creation-Date: 2016-01-21 19:32+0800\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,11 +17,11 @@ msgstr ""
 "Content-Type: text/plain; charset=CHARSET\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: .ubuntu-sdk-deploy/components/ShowBar.qml:22 components/ShowBar.qml:22
+#: .ubuntu-sdk-deploy/components/ShowBar.qml:19 components/ShowBar.qml:19
 msgid "Score"
 msgstr ""
 
-#: .ubuntu-sdk-deploy/components/ShowBar.qml:40 components/ShowBar.qml:40
+#: .ubuntu-sdk-deploy/components/ShowBar.qml:33 components/ShowBar.qml:33
 msgid "Time Left"
 msgstr ""
 
