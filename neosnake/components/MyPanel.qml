@@ -1,5 +1,6 @@
 import QtQuick 2.0
 import QtGraphicalEffects 1.0
+import QtMultimedia 5.0
 import Ubuntu.Components 1.3
 
 Panel {
@@ -113,7 +114,7 @@ Panel {
         anchors.top: recSound.top
         anchors.left: recTutorial.right
         anchors.margins: units.gu(4)
-        color: "purple"
+        color: "#bdff2f"
     }
     Rectangle{
         width:units.gu(4)
@@ -121,16 +122,25 @@ Panel {
         anchors.top: recSound.top
         anchors.right:recSound.left
         anchors.margins: units.gu(4)
-        color: "red"
+        color: "#ff2525"
     }
+
+    MediaPlayer{
+        id:bgm
+        autoPlay:true
+        loops:MediaPlayer.Infinite
+    }
+
     onOpenedChanged: {
         if(opened==true){
             mainPage.item.pause()
             mainPage.item.showAnimation.start()
+            bgm.source="../bgm/drops.mp3"
         }
         else{
             mainPage.item.conti()
             mainPage.item.popAnimation.start()
+            bgm.source="../bgm/pingpongpang.mp3"
         }
     }
     Component.onCompleted: panel.open()

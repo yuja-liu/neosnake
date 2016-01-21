@@ -8,36 +8,47 @@ Page{
     property alias showAnimation: showAnimation
     property alias popAnimation: popAnimation
 
-    Item{
+    Control{
+        z:1
         id:leftControl
         height:parent.height
         width:parent.width/2
-        anchors.left: parent.left
-        anchors.top:parent.top
+        anchors{ left:parent.left; top: parent.top}
+        imageAnchors.left: leftControl.left
+        imageSource: "../images/turnLeft.png"
+        text:"Turn LEFT"
         MouseArea{
-            anchors.fill:parent
+            anchors.fill: parent
             onClicked: {
                 snake.turnLeft()
+                parent.fadeAway.start()
+                rightControl.fadeAway.start()
             }
         }
     }
-    Item{
+
+    Control{
+        z:1
         id:rightControl
         height:parent.height
         width:parent.width/2
-        anchors.left: leftControl.right
-        anchors.top:parent.top
+        anchors{ right:parent.right; top:parent.top}
+        imageAnchors.right:rightControl.right
+        imageSource: "../images/turnRight.png"
+        text:"Turn RIGHT"
         MouseArea{
-            anchors.fill:parent
+            anchors.fill: parent
             onClicked: {
                 snake.turnRight()
+                parent.fadeAway.start()
+                leftControl.fadeAway.start()
             }
         }
     }
 
     Rectangle{
         id:frontground
-        z:1
+        z:2
         anchors.fill: parent
         color:"white"
         opacity: 0
