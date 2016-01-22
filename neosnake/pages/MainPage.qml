@@ -7,6 +7,7 @@ Page{
     property alias timeLeft: countdown.left
     property alias showAnimation: showAnimation
     property alias popAnimation: popAnimation
+    property alias side: calculator.side
     SideCalculator{
         id:calculator
     }

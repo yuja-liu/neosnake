@@ -16,6 +16,7 @@ MainView {
     }
     ShowBar{
         id:showbar
+        side:mainPage.item.side
         z:2
         anchors.right: parent.right
         visible: (tabs.selectedTab==tab1) ? true : false
@@ -52,11 +53,15 @@ MainView {
                         bottom: parent.bottom
                     }
                     source: (tabs.selectedTab === tab2) ? Qt.resolvedUrl("pages/AboutPage.qml") : ""
+                    onLoaded: {
+                        item.side= mainPage.item.side
+                    }
                 }
             }
         }
         HelpPage{
             id:helpPage
+            side:mainPage.item.side
         }
     }
 

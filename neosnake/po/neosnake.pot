@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-01-21 19:32+0800\n"
+"POT-Creation-Date: 2016-01-22 09:42+0800\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,17 +17,17 @@ msgstr ""
 "Content-Type: text/plain; charset=CHARSET\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: .ubuntu-sdk-deploy/components/ShowBar.qml:19 components/ShowBar.qml:19
+#: .ubuntu-sdk-deploy/components/ShowBar.qml:20 components/ShowBar.qml:20
 msgid "Score"
 msgstr ""
 
-#: .ubuntu-sdk-deploy/components/ShowBar.qml:33 components/ShowBar.qml:33
+#: .ubuntu-sdk-deploy/components/ShowBar.qml:34 components/ShowBar.qml:34
 msgid "Time Left"
 msgstr ""
 
 #. TRANSLATORS: %1 is the link to the source code, %2 is the hosting service
 #. Example: "Source code available on <a href=\https://launchpad.net/match-the-color>launchpad.net</a>"
-#: .ubuntu-sdk-deploy/pages/AboutPage.qml:43 pages/AboutPage.qml:43
+#: .ubuntu-sdk-deploy/pages/AboutPage.qml:45 pages/AboutPage.qml:45
 #, qt-format
 msgid "Source code available on <a href=\"%1\">%2</a>"
 msgstr ""

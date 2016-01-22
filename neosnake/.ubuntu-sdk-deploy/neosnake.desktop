@@ -1,6 +1,6 @@
 [Desktop Entry]
 Name=neosnake
-Exec=./qtc_device_debughelper.py app "qmlscene $@ Main.qml"
+Exec=qmlscene $@ Main.qml
 Icon=images/neosnakeIcon.png
 Terminal=false
 Type=Application

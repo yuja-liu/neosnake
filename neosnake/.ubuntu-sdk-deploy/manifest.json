@@ -1,17 +1,15 @@
 {
     "name": "neosnake.rain",
-    "description": "description of neosnake",
+    "description": "Remember the snake game on your Nokia phones? Here comes the new and more challenging one!",
     "architecture": "all",
     "title": "neosnake",
     "hooks": {
         "neosnake": {
             "apparmor": "neosnake.apparmor",
-            "desktop":  "neosnake.desktop"
+            "desktop": "neosnake.desktop"
         }
     },
     "version": "0.1",
     "maintainer": "Rain Liu <liuyujiaokok@126.com>",
-    "framework" : "ubuntu-sdk-15.04"
+    "framework": "ubuntu-sdk-15.04"
 }
-
-
