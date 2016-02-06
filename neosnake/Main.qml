@@ -5,7 +5,7 @@ import"components"
 
 MainView {
     id: mainView
-    applicationName: "Neosnake"
+    applicationName: "neosnake.rain"
     MyPanel{
         id: panel
         z:1
