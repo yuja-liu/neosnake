@@ -23,3 +23,5 @@ and && some more tests
 Main codes of this project is still working
 
 You can take them as some references
+
+Please submmit your changes in branch 'dev'
